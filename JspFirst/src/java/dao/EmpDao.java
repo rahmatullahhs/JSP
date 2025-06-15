@@ -81,13 +81,16 @@ public class EmpDao {
         
       public static void  deletEmp(int id) {  
         
-        int status = 0;
+       
             sql = "delete from employee where id=?";
         
             try {
-                ps=DbUtil.getCon().prepareStatement(sql, id);
+                ps=DbUtil.getCon().prepareStatement(sql);
                 
-                
+                ps.setInt(1, id);
+                ps.executeUpdate();
+                ps.close();
+                DbUtil.getCon().close();
                 
                 
             } catch (SQLException ex) {

@@ -41,8 +41,11 @@
                     <td>${s.getRole()}</td>
                     <td>${s.getSalary()}</td>
                     <td>
-                        <button type="submit" class="btn btn-primary">Edit</button>
-                        <button type="submit" class="btn btn-warning">Delete</button>
+                         <a href="editstudentform.jsp?id=${s.id}" class="btn btn-primary">Edit</a>
+                        <a href="deletestudent.jsp?id=${s.id}" class="btn btn-danger" 
+                           onclick="return confirm('Are you sure you want to delete this student?');">Delete</a>
+<!--                        <button type="submit" class="btn btn-primary">Edit</button>
+                        <button type="submit" class="btn btn-warning">Delete</button>-->
                     </td>
 
                 </tr>
