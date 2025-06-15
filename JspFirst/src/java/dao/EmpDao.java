@@ -77,6 +77,29 @@ public class EmpDao {
             return status;
         }
 
+        
+        
+      public static void  deletEmp(int id) {  
+        
+        int status = 0;
+            sql = "delete from employee where id=?";
+        
+            try {
+                ps=DbUtil.getCon().prepareStatement(sql, id);
+                
+                
+                
+                
+            } catch (SQLException ex) {
+                System.getLogger(EmpDao.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+            }
+        
+       
+        
+        
+        
+        
+      }
     }
 
 

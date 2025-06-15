@@ -8,7 +8,7 @@
     <form action="addEmp.jsp"  method="post">
         <div class="row">
             <div class="col-md-6">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
             </div>
 
@@ -21,7 +21,7 @@
         <div class="row mt-3">
             <div class="col-md-6">
                 <label  class="form-label">Role</label>
-                <select class="form-select" name="subject" aria-label="Default select example">
+                <select class="form-select" name="role" aria-label="Default select example">
                     <option selected>Select Anyone</option>
                     <option value="developer">Developer</option>
                     <option value="programmer">Programmer</option>
@@ -32,7 +32,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <label for="exampleInputEmail1" class="form-label">Salary</label>
+                    <label for="salary" class="form-label">Salary</label>
                     <input type="text" class="form-control" id="salary" name="salary" placeholder="salary">
                 </div>
 
