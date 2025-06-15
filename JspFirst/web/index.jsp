@@ -18,7 +18,7 @@
 
 
 
-    <h1 class="text-primary text-center">All Student</h1> 
+    <h1 class="text-primary text-center">All Employees</h1> 
 
     <table class="table table-striped">
 
