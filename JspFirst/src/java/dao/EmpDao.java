@@ -132,11 +132,9 @@ public class EmpDao {
             ps.setString(2, s.getEmail());
             ps.setString(3, s.getRole());
             ps.setFloat(4, s.getSalary());
-
             ps.setInt(5, s.getId());
 
             status = ps.executeUpdate();
-
             System.out.println(status);
 
             ps.close();

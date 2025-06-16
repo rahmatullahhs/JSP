@@ -1,54 +1,53 @@
-<div class="container">
-    <footer class="row row-cols-5 py-5 my-5 border-top">
-        <div class="col">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <p class="text-muted">? 2021</p>
-        </div>
+<div class="container-fluid bg-dark text-light mt-5 pt-3">
+    <footer class="container py-3">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <h6 class="text-white mb-1">YourCompany</h6>
+                <p class="text-muted small mb-1">Empowering your workforce.</p>
+                <p class="text-muted small mb-0">&copy; 2025</p>
+            </div>
 
-        <div class="col">
+            <div class="col-md-2 mb-2">
+                <h6 class="text-white mb-2">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Dashboard</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Employees</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Reports</a></li>
+                </ul>
+            </div>
 
-        </div>
+            <div class="col-md-2 mb-2">
+                <h6 class="text-white mb-2">Company</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Careers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Press</a></li>
+                </ul>
+            </div>
 
-        <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-        </div>
+            <div class="col-md-2 mb-2">
+                <h6 class="text-white mb-2">Support</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Help Center</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-muted small">Contact</a></li>
+                </ul>
+            </div>
 
-        <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-        </div>
-
-        <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+            <div class="col-md-3 mb-2">
+                <h6 class="text-white mb-2">Stay Connected</h6>
+                <ul class="list-unstyled d-flex">
+                    <li><a class="text-muted me-3 fs-6" href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a class="text-muted me-3 fs-6" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a class="text-muted me-3 fs-6" href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a class="text-muted fs-6" href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-</div>   
+</div>
 
-
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
