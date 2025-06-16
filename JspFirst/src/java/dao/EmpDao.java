@@ -122,7 +122,7 @@ public class EmpDao {
         return s;
     }
 
-    public static int updateStudent(Employee s) {
+    public static int updateEmployee(Employee s) {
         int status = 0;
         sql = "update employee set name= ?, email= ?, role= ?, salary=?, where id=?";
 
