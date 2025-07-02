@@ -34,7 +34,7 @@
         <!-- start 2nd row-->
         <div class="row mt-3">
             <div class="col-md-6">
-                <label  class="form-label">Role</label>
+                <label  class="form-label"></label>
                 <select class="form-select" name="role" aria-label="Default select example">
                     <option selected>Select Anyone</option>
                     <option value="developer">Developer</option>
