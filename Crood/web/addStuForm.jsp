@@ -2,10 +2,10 @@
 
 <div class="container my-3">
     <div class="bg-success text-center">
-        <h1 class="jumborton">Add Employees</h1>
+        <h1 class="jumborton">Add student</h1>
     </div>
     <!--    start form-->
-    <form action="addEmp.jsp"  method="post">
+    <form action="addStu.jsp"  method="post">
         <div class="row">
             <div class="col-md-6">
                 <label for="name" class="form-label">Name</label>
@@ -20,7 +20,7 @@
         <!-- start 2nd row-->
         <div class="row mt-3">
             <div class="col-md-6">
-                <label  class="form-label">Role</label>
+                <label  class="form-label">Subject</label>
                 <select class="form-select" name="role" aria-label="Default select example">
                     <option selected>Select Anyone</option>
                     <option value="developer">Developer</option>
@@ -29,10 +29,10 @@
                     <option value="architecture">Architecture</option>
                 </select>
             </div>
-
+           
             <div class="row">
                 <div class="col-md-6">
-                    <label for="salary" class="form-label">Salary</label>
+                    <label for="salary" class="form-label">Fee</label>
                     <input type="text" class="form-control" id="salary" name="salary" placeholder="salary">
                 </div>
 

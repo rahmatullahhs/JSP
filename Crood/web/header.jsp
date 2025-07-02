@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+
   <title>Crood</title>
   <style>
     body {
@@ -34,10 +31,9 @@
   <div class="navbar">
   
       <a href="index.jsp">Home</a>
-<a href="addStuForm.jsp">Add Students</a>
+     <a href="addStuForm.jsp">Add Students</a>
     <a href="#">Services</a>
     <a href="#">Contact</a>
   </div>
 
-</body>
-</html>
+

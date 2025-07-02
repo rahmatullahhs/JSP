@@ -57,14 +57,14 @@
                             <td>${s.id}</td>
                             <td>${s.name}</td>
                             <td>${s.email}</td>
-                            <td>${s.role}</td>
-                            <td>$${s.salary}</td>
+                            <td>${s.subject}</td>
+                            <td>$${s.fee}</td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <a href="editEmpform.jsp?id=${s.id}" class="btn btn-sm btn-outline-primary">Edit</a>
-                                    <a href="deleteEmp.jsp?id=${s.id}" 
+                                    <a href="editStuForm.jsp?id=${s.id}" class="btn btn-sm btn-outline-primary">Edit</a>
+                                    <a href="deletStu.jsp?id=${s.id}" 
                                        class="btn btn-sm btn-outline-danger"
-                                       onclick="return confirm('Are you sure you want to delete this employee?');">Delete</a>
+                                       onclick="return confirm('Are you sure you want to delete this Student?');">Delete</a>
                                 </div>
                             </td>
                         </tr>

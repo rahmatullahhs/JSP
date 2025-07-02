@@ -16,7 +16,7 @@ public class DbUtil {
     
  
     private static Connection c = null;
-    private static String url = "jdbc:mysql://localhost:3306/jsp";
+    private static String url = "jdbc:mysql://localhost:3306/crood";
     private static String user = "root";
     private static String password = "1234";
     private static String driver = "com.mysql.cj.jdbc.Driver";

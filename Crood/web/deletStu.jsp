@@ -4,7 +4,7 @@
 
 <%
         
-      StudentDao.deletEmp(s.getId());
+      StudentDao.deletStu(s.getId());
        
       response.sendRedirect("index.jsp");
     

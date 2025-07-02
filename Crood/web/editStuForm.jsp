@@ -14,10 +14,10 @@
 
 <div class="container my-3">
     <div class="bg-success text-center">
-        <h1 class="jumborton">Add Employees</h1>
+        <h1 class="jumborton">Update Student</h1>
     </div>
     <!--    start form-->
-    <form action="addEmp.jsp"  method="post">
+    <form action="addStu.jsp"  method="post">
            <input type="hidden" name="id" value="<%=s.getId()%>" />
         <div class="row">
             <div class="col-md-6">

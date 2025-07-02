@@ -19,7 +19,7 @@ public class StudentDao {
 
     public static List<Student> getAllstudent() {
         List<Student> Student = new ArrayList<>();
-        sql = "select * from Student";
+        sql = "select * from student";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
@@ -52,7 +52,7 @@ public class StudentDao {
 
     public static int saveStu(Student s) {
         int status = 0;
-        sql = "insert into Student(name, email, subject, fee) values(?,?,?,?)";
+        sql = "insert into student(name, email, subject, fee) values(?,?,?,?)";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
@@ -125,7 +125,7 @@ public class StudentDao {
 
     public static int updateStudent(Student s) {
         int status = 0;
-        sql = "update employee set name= ?, email= ?, subject= ?, fee=?, where id=?";
+        sql = "update student set name= ?, email= ?, subject= ?, fee=?, where id=?";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
