@@ -29,10 +29,9 @@ public class EmpDao {
                 Employee s = new Employee(
                         rs.getInt("id"),
                         rs.getString("name"),
-                        rs.getString("email"),
-                        rs.getString("role"),
+                        rs.getString("designation"),
                         rs.getFloat("salary")
-                );
+              );
 
                 employees.add(s);
 
@@ -51,14 +50,13 @@ public class EmpDao {
 
     public static int saveEmp(Employee s) {
         int status = 0;
-        sql = "insert into employee(name, email, role, salary) values(?,?,?,?)";
+        sql = "insert into employee(name, designation, salary) values(?,?,?)";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
             ps.setString(1, s.getName());
-            ps.setString(2, s.getEmail());
-            ps.setString(3, s.getRole());
-            ps.setFloat(4, s.getSalary());
+            ps.setString(2, s.getDesignation());
+            ps.setFloat(3, s.getSalary());
 
             status = ps.executeUpdate();
 
@@ -105,9 +103,8 @@ public class EmpDao {
             while (rs.next()) {
                 s = new Employee(
                         rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("email"),
-                        rs.getString("role"),
+                        rs.getString("name"), 
+                        rs.getString("designation"),
                         rs.getFloat("salary")
                 );
             }
@@ -124,15 +121,14 @@ public class EmpDao {
 
     public static int updateEmployee(Employee s) {
         int status = 0;
-        sql = "update employee set name= ?, email= ?, role= ?, salary=? where id=?";
+        sql = "update employee set name= ?, designation= ?, salary=? where id=?";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
             ps.setString(1, s.getName());
-            ps.setString(2, s.getEmail());
-            ps.setString(3, s.getRole());
-            ps.setFloat(4, s.getSalary());
-            ps.setInt(5, s.getId());
+            ps.setString(2, s.getDesignation());
+            ps.setFloat(3, s.getSalary());
+            ps.setInt(4, s.getId());
 
             status = ps.executeUpdate();
             System.out.println(status);

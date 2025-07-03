@@ -26,16 +26,14 @@
                  
             </div>
 
-            <div class="col-md-6">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" value="<%=s.getEmail()%>" placeholder="example@gmail.com">
-            </div>        
+            
+                
         </div>
         <!-- start 2nd row-->
         <div class="row mt-3">
             <div class="col-md-6">
-                <label  class="form-label">Role</label>
-                <select class="form-select" name="role" aria-label="Default select example">
+                <label  class="form-label">Designation</label>
+                <select class="form-select" name="designation" aria-label="Default select example">
                     <option selected>Select Anyone</option>
                     <option value="developer">Developer</option>
                     <option value="programmer">Programmer</option>

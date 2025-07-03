@@ -74,11 +74,10 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Role</th>
+                        <th>Name</th>                       
+                        <th>Designation</th>
                         <th>Salary</th>
-                        <th>Actions</th>
+                        <th>Update</th>
                     </tr>
                 </thead>
 
@@ -87,8 +86,7 @@
                         <tr>
                             <td>${s.id}</td>
                             <td>${s.name}</td>
-                            <td>${s.email}</td>
-                            <td>${s.role}</td>
+                            <td>${s.designation}</td>
                             <td>$${s.salary}</td>
                             <td>
                                 <div class="btn-group" role="group">

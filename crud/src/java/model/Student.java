@@ -10,7 +10,8 @@ package model;
  */
 public class Student {
     
-    private int id; 
+    
+    private int id;
     private String name;
     private String email;
     private String contactNo;
@@ -36,18 +37,6 @@ public class Student {
         this.subject = subject;
         this.gender = gender;
     }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-   
-
-    
 
     public int getId() {
         return id;
@@ -89,6 +78,14 @@ public class Student {
         this.subject = subject;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    
     
     
     
