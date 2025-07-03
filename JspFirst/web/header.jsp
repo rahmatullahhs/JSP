@@ -40,7 +40,8 @@
     </head>
     <body>
         <div class="text-center">
-             <a class="text-danger text-decoration-none" href="addEmpForm.jsp"><h1>Register EMP</h1></a>
+            <button><a class="text-danger text-decoration-none" href="addEmpForm.jsp"><h3>Add New Employee</h3></a></button>
+             
     </div>
 
 </body>
