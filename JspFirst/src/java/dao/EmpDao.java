@@ -124,7 +124,7 @@ public class EmpDao {
 
     public static int updateEmployee(Employee s) {
         int status = 0;
-        sql = "update employee set name= ?, email= ?, role= ?, salary=?, where id=?";
+        sql = "update employee set name= ?, email= ?, role= ?, salary=? where id=?";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);

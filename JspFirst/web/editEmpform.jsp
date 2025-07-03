@@ -17,7 +17,7 @@
         <h1 class="jumborton">Add Employees</h1>
     </div>
     <!--    start form-->
-    <form action="addEmp.jsp"  method="post">
+    <form action="editEmp.jsp"  method="post">
            <input type="hidden" name="id" value="<%=s.getId()%>" />
         <div class="row">
             <div class="col-md-6">

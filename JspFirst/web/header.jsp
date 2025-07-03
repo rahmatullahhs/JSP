@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+     Required meta tags 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+     Bootstrap CSS 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons (optional) -->
+     Bootstrap Icons (optional) 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <title>jsp First</title>
@@ -56,24 +56,19 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
                     <a class="nav-link active" href="index.jsp"><i class="bi bi-house-door-fill me-1"></i>Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="addEmpForm.jsp"><i class="bi bi-person-plus-fill me-1"></i>Register EMP</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-gear-fill me-1"></i>Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-chat-dots-fill me-1"></i>Feedback</a>
-                </li>
+                
+          
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Bootstrap JS -->
+ Bootstrap JS 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

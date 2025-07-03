@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Extra Custom Styles -->
-<style>
+<!--<style>
     body {
         font-family: 'Poppins', sans-serif;
         background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
@@ -60,14 +60,14 @@
     .table-hover tbody tr:hover {
         background-color: #f1f1f1;
     }
-</style>
+</style>-->
 
 <!-- Main Content -->
 <div class="container">
 
     <div class="card-custom">
         <h1 class="text-center text-primary mb-4"> Our Employees </h1>
-
+<a class="nav-link" href="addEmpForm.jsp"><i class="bi bi-person-plus-fill me-1"></i>Register EMP</a>
         <div class="table-responsive">
             <table class="table table-striped table-hover align-middle rounded overflow-hidden">
 
@@ -108,4 +108,4 @@
 
 </div>
 
-<%@include file="footer.jsp" %>
+<%--<%@include file="footer.jsp" %>--%>

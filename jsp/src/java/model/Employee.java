@@ -6,21 +6,20 @@ package model;
 
 /**
  *
- * @author Admin
+ * @author saruk
  */
-public class Student {
-    
-    private int id; 
+public class Employee {
+      private int id; 
     private String name;
     private String email;
     private String contactNo;
     private String subject;
     private String gender;
 
-    public Student() {
+    public Employee() {
     }
 
-    public Student(int id, String name, String email, String contactNo, String subject, String gender) {
+    public Employee(int id, String name, String email, String contactNo, String subject, String gender) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -29,25 +28,13 @@ public class Student {
         this.gender = gender;
     }
 
-    public Student(String name, String email, String contactNo, String subject, String gender) {
+    public Employee(String name, String email, String contactNo, String subject, String gender) {
         this.name = name;
         this.email = email;
         this.contactNo = contactNo;
         this.subject = subject;
         this.gender = gender;
     }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-   
-
-    
 
     public int getId() {
         return id;
@@ -89,8 +76,28 @@ public class Student {
         this.subject = subject;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
 }
