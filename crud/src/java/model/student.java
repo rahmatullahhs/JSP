@@ -8,7 +8,7 @@ package model;
  *
  * @author Admin
  */
-public class Student {
+public class student {
     
     private int id; 
     private String name;
@@ -17,10 +17,10 @@ public class Student {
     private String subject;
     private String gender;
 
-    public Student() {
+    public student() {
     }
 
-    public Student(int id, String name, String email, String contactNo, String subject, String gender) {
+    public student(int id, String name, String email, String contactNo, String subject, String gender) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -29,7 +29,7 @@ public class Student {
         this.gender = gender;
     }
 
-    public Student(String name, String email, String contactNo, String subject, String gender) {
+    public student(String name, String email, String contactNo, String subject, String gender) {
         this.name = name;
         this.email = email;
         this.contactNo = contactNo;

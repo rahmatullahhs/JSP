@@ -1,12 +1,12 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="model.Student"%>
+<%@page import="model.student"%>
 <%@page import="dao.studentdao"%>
 <%@page import="java.util.*"%>
 
 <%@include file="header.jsp" %>
 
 <%
-    List<Student> list = StudentDao.getAllStudents();
+    List<student> list = studentdao.getAllStudents();
     request.setAttribute("list", list);
 %>
 

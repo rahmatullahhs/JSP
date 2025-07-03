@@ -1,10 +1,10 @@
-<jsp:useBean class="model.Student"  id="s" />
-<%@page  import="dao.StudentDao" %>
+<jsp:useBean class="model.student"  id="s" />
+<%@page  import="dao.studentdao" %>
 <jsp:setProperty  name="s" property="*" />
 
 <%
         
-      StudentDao.deleteStudent(s.getId());
+      studentdao.deleteStudent(s.getId());
        
       response.sendRedirect("index.jsp");
     

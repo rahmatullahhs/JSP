@@ -1,10 +1,10 @@
-<jsp:useBean class="model.Student"  id="parvej" />
-<%@page  import="dao.StudentDao" %>
+<jsp:useBean class="model.student"  id="parvej" />
+<%@page  import="dao.studentdao" %>
 <jsp:setProperty  name="parvej" property="*" />
 
 <%
         
-        int result=StudentDao.updateStudent(parvej);
+        int result=studentdao.updateStudent(parvej);
         if(result > 0){
              response.sendRedirect("index.jsp");
     

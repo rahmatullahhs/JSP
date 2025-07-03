@@ -1,158 +1,121 @@
 package dao;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import model.Student;
+import model.student;
 import util.DbUtil;
 
-public class StudentDao {
+public class studentDao {
 
     static PreparedStatement ps;
     static ResultSet rs;
     static String sql;
 
-    public static List<Student> getAllStudents() {
-        List<Student> students = new ArrayList<>();
-        sql = "select * from student";
-
+    //Get All Employees Details From Database
+    public static List<student> getAllEmployees() {
+        List<student> students = new ArrayList<>();
+        sql = "select * from employee";
         try {
-            ps = DbUtil.getCon().prepareStatement(sql);
-
+            ps = DbUtil.getConnection().prepareStatement(sql);
             rs = ps.executeQuery();
-
             while (rs.next()) {
-                Student s = new Student(
-                        rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("email"),
-                        rs.getString("contactNo"),
-                        rs.getString("subject"),
-                        rs.getString("gender")
-                );
-
-                students.add(s);
-
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String designation = rs.getString("designation");
+                float salary = rs.getFloat("salary");
+                student student = new student(id, name, designation, salary);
+                student.add(student);
             }
 
             rs.close();
             ps.close();
-            DbUtil.getCon().close();
+            DbUtil.getConnection().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(studentDao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
         return students;
     }
 
-    public static int saveStudent(Student s) {
-
-        if (!(s.getName().isEmpty())) {
-
-        }
-
+    //Set Employee Details To Database
+    public static int setEmployee(student student) {
         int status = 0;
-        sql = "insert into student(name, email, contactNo, subject, gender) values(?,?,?,?,?)";
-
+        sql = "insert into employee(name, designation, salary)values(?,?,?)";
         try {
-            ps = DbUtil.getCon().prepareStatement(sql);
-            ps.setString(1, s.getName());
-            ps.setString(2, s.getEmail());
-            ps.setString(3, s.getContactNo());
-            ps.setString(4, s.getSubject());
-            ps.setString(5, s.getGender());
-
+            ps = DbUtil.getConnection().prepareStatement(sql);
+            ps.setString(1, student.getName());
+            ps.setString(2, student.getDesignation());
+            ps.setDouble(3, student.getSalary());
             status = ps.executeUpdate();
-
-            System.out.println(status);
-
             ps.close();
-            DbUtil.getCon().close();
+            DbUtil.getConnection().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(studentDao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
         return status;
     }
 
-    public static void deleteStudent(int id) {
-        sql = "delete from student where id= ?";
-
+    //Get Employee Details By Id
+    public static student getEmployeeByID(int id) {
+        student student = new student();
+        sql = "select * from employee where id = ?";
         try {
-            ps = DbUtil.getCon().prepareStatement(sql);
+            ps = DbUtil.getConnection().prepareStatement(sql);
             ps.setInt(1, id);
-
-            ps.executeUpdate();
-
-            ps.close();
-            DbUtil.getCon().close();
-
-        } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-    }
-
-    public static Student getById(int id) {
-        Student s = null;
-        sql = "select * from student where id=?";
-
-        try {
-            ps = DbUtil.getCon().prepareStatement(sql);
-            ps.setInt(1, id);
-
             rs = ps.executeQuery();
-
             while (rs.next()) {
-                s = new Student(
-                        rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("email"),
-                        rs.getString("contactNo"),
-                        rs.getString("subject"),
-                        rs.getString("gender")
-                );
+                int id1 = rs.getInt("id");
+                String name = rs.getString("name");
+                String designation = rs.getString("designation");
+                float salary = rs.getFloat("salary");
+                student = new student(id1, name, designation, salary);
             }
-
             rs.close();
             ps.close();
-            DbUtil.getCon().close();
+            DbUtil.getConnection().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(studentDao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        return s;
+
+        return student;
     }
 
-    public static int updateStudent(Student s) {
+    //Update Employee Details
+    public static int updateEmployee(student employee) {
         int status = 0;
-        sql = "update student set name= ?, email= ?, contactNo= ?, gender=?, subject=? where id=?";
-
+        sql = "update employee set name = ?, designation = ?, salary = ? where id = ?";
         try {
-            ps = DbUtil.getCon().prepareStatement(sql);
-            ps.setString(1, s.getName());
-            ps.setString(2, s.getEmail());
-            ps.setString(3, s.getContactNo());
-            ps.setString(4, s.getGender());
-            ps.setString(5, s.getSubject());
-            ps.setInt(6, s.getId());
-
+            ps = DbUtil.getConnection().prepareStatement(sql);
+            ps.setString(1, employee.getName());
+            ps.setString(2, employee.getDesignation());
+            ps.setDouble(3, employee.getSalary());
+            ps.setInt(4, employee.getId());
             status = ps.executeUpdate();
-
-            System.out.println(status);
-
             ps.close();
-            DbUtil.getCon().close();
+            DbUtil.getConnection().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(studentDao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        return status;
+    }
+
+    //Delete Employee From Database
+    public static int deleteEmployee(int id) {
+        int status = 0;
+        sql = "delete from employee where id = ?";
+        try {
+            ps = DbUtil.getConnection().prepareStatement(sql);
+            ps.setInt(1, id);
+            status = ps.executeUpdate();
+        } catch (SQLException ex) {
+            java.util.logging.Logger.getLogger(studentDao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+
         return status;
     }
 

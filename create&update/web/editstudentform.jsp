@@ -1,5 +1,5 @@
-<%@page import="model.Student" %>
-<%@page import="dao.StudentDao" %>
+<%@page import="model.student" %>
+<%@page import="dao.studentdao" %>
 
 
 <%
