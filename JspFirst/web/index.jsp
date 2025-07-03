@@ -67,7 +67,7 @@
 
     <div class="card-custom">
         <h1 class="text-center text-primary mb-4"> Our Employees </h1>
-<a class="nav-link" href="addEmpForm.jsp"><i class="bi bi-person-plus-fill me-1"></i>Register EMP</a>
+
         <div class="table-responsive">
             <table class="table table-striped table-hover align-middle rounded overflow-hidden">
 
