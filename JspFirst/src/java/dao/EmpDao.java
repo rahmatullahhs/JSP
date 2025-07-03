@@ -59,7 +59,6 @@ public class EmpDao {
             ps.setFloat(3, s.getSalary());
 
             status = ps.executeUpdate();
-
             System.out.println(status);
 
             ps.close();
